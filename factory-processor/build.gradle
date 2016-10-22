@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':factory-annotation')
+    // https://mvnrepository.com/artifact/com.squareup/javapoet
+    compile 'com.squareup:javapoet:1.7.0'
+    compile 'com.google.auto:auto-common:0.6'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    compile 'org.litepal.android:core:1.3.2'
+}
